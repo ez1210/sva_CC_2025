@@ -7,7 +7,7 @@ let prevMouseX, prevMouseY;
 let distanceAccumulated = 0;
 
 function preload() {
-  font = loadFont('weavingpointsVF.ttf');
+  font = loadFont('./weavingpointsVF.ttf');
 }
 
 function setup() {
