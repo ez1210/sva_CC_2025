@@ -3,7 +3,7 @@ class Vehicle {
         this.pos = createVector(x, y);
         this.vel = createVector();
         this.acc = createVector();
-        this.friction = 0.998;
+        this.friction = 0.998; //힘의 분산
     }
 
     applyForce(force) {
