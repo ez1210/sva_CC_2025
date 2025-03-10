@@ -1,23 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
+    font-family: Helvetica;
+    background-color: #ffffff;
+}
+
+li {
+    list-style-type: none;
+} 
+
+ul {
+    margin: 10px;
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-}
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    line-height: 200%;
+  }
 
-nav a {
-    color: white;
+a {
+    color: black;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 0.8em;
+    padding-top: 0.8em;
 }
 
-main {
-    padding: 20px;
+a:hover {
+    color: red;
 }
