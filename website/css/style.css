@@ -1,14 +1,7 @@
 body {
     font-family: Helvetica;
-    background-color: #ffffff;
-}
-
-li {
-    list-style-type: none;
-} 
-
-ul {
-    margin: 10px;
+    background-color: #dde2e1;
+    margin: 0;
     padding: 0;
 }
 
@@ -16,7 +9,24 @@ ul {
     display: flex;
     flex-direction: row;
     line-height: 200%;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
   }
+
+li {
+    list-style-type: none;
+} 
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
 
 a {
     color: black;
@@ -26,5 +36,41 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: rgb(0, 132, 255);
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /*여러줄로 배치*/
+    gap: 20px;        /* 간격 조정 */
+    padding: 20px;
+    justify-content: center;
+}
+
+.work {
+    width: 300px; /* 개별 작품 크기 */
+    text-align: center;
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.work p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.work a {
+    text-decoration: none;
+    color: black;
+}
+
+.work img:hover {
+    filter: brightness(80%);
+}
+
