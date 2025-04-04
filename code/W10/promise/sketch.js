@@ -1,10 +1,7 @@
 let circleX, circleY, circleSize, circleColor;
-let message = "Nothing!";
 
 function setup() {
     createCanvas(500, 300);
-    console.log('start:', millis());
-    setTimeout(callBack, 5000);
     circleX = width/2;
     circleY = height/2;
     circleSize = 50;
@@ -16,7 +13,6 @@ function draw() {
     fill(circleColor);
     circle(circleX, circleY, circleSize);
     fill(0);
-    text (message, width * 0.45, height * 0.1);
 }
 
 function mouseClicked() {
@@ -45,7 +41,7 @@ async function anim() {
 
     await delay(1000);
     circleSize = 50;
-
+/*
     setTimeout(() => {
         circleSize = 150;
         setTimeout(() => {
@@ -61,6 +57,7 @@ async function anim() {
             }, 1000);
         }, 1000);
     }, 1000);
+*/
 }
 
 function callBack() {
