@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  },
+  "name": "sva_cc_2025",
+  "version": "1.0.0",
+  "description": "SVA Junior graphic design Creative Coding class spring semester",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ez1210/sva_CC_2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ez1210/sva_CC_2025/issues"
+  },
+  "homepage": "https://github.com/ez1210/sva_CC_2025#readme"
+}

@@ -46,9 +46,30 @@ function setup() {
 
 function draw() {
     if (currentTime < maxTime) {
-        currentTime += 5000;
+        currentTime += 40000;
     }
     background(190);
     stations.forEach(s => s.display());
     trips.forEach(t => t.display(currentTime));
+
+    fill(0);
+    textSize(18);
+    const time = new Date(currentTime);
+    text(formatTime(time), 50, 50);
+}
+
+function formatTime(date) {
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let ampm = hours >= 12 ? 'pm' : 'am';
+    //=let ampm = if(hours >= 12) {
+    //  ampm = 'am';
+    //}else {
+    //  ampm = 'pm'
+    //}
+
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    return hours + ':' + minutes + ' ' + ampm;
 }
