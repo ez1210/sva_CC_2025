@@ -70,7 +70,7 @@ function viewMode() {
     particles[i].update();
     particles[i].display();
     if (particles[i].isFinished()) {
-      particles.splice(i, 1);  // Remove finished particles
+      particles.splice(i, 1);
     }
   }
 }
@@ -85,7 +85,6 @@ function handleWish() {
     lamps.push(newLamp);
     textInput.value('');
 
-    // 폭죽 파티클 생성
     for (let i = 0; i < 50; i++) {
       particles.push(new Particle(x, y));
     }
