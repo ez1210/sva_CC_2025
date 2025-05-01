@@ -1,0 +1,29 @@
+button {
+  font-size: 1px;
+  border: none;
+}
+
+#wishInput {
+  background: rgba(255, 255, 255, 0.294);
+  border: none;
+  color: black;
+  outline: none;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+}
+
+#inputButton {
+  background: pink;
+  border: 2px solid;
+  font-size: 18px;
+  cursor: alias;
+}
+
+#viewButton {
+  background: lightblue;
+  border: 2px solid;
+  font-size: 18px;
+  cursor: pointer;
+}
